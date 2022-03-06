@@ -1,4 +1,4 @@
-ansible==5.4.0
+ansible
 ansible-core==2.12.3
 cffi==1.15.0
 click==8.0.4
