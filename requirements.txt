@@ -1,5 +1,5 @@
 ansible
-ansible-core==2.12.3
+ansible-core
 cffi==1.15.0
 click==8.0.4
 cryptography==36.0.1
