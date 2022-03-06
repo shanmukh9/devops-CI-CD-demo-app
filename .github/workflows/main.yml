@@ -32,7 +32,7 @@ jobs:
       - name: Build Docker Image and Push to DockerHub
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: asquare14/demo-app
+          image: shanmukh9/scaler-demo-python-app
           tags: latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
