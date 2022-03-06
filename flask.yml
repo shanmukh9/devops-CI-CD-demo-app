@@ -1,0 +1,26 @@
+  - name: "Playing with Ansible"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: "just execute a ls -lrt command"
+      shell: "ls -lrt"
+      # register: "output"
+    
+    - name: Install pip
+      shell: "python -m pip install --upgrade pip"
+      register: "output"
+
+    - debug: var=output.stdout_lines
+
+    - name: Install Flask
+      shell: "pip install -r requirements.txt"
+      register: "outputf"
+
+    - debug: var=outputf.stdout_lines
+
+    - name: Run Flask Application
+      shell: "python app.py"
+      register: "outputlog"
+    
+    - debug: var=outputlog.stdout_lines
