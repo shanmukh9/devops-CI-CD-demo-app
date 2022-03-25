@@ -30,7 +30,7 @@ pipeline{
 		}
 	
 	
-	stage('Run Docker container on Jenkins Agent') {
+	stage('Deploy on agent') {
              
             steps 
    {
