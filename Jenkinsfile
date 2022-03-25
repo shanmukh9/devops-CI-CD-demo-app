@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t my-demo-app:latest .  --network=host'
+				sh 'docker build -t shanmukh9/my-demo-app:latest .  --network=host'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push shanmukh9/my-demo-app'
+				sh 'docker push shanmukh9/my-demo-app:latest'
 			}
 		}
 	}
