@@ -29,6 +29,15 @@ pipeline{
 			}
 		}
 	}
+	
+	stage('Run Docker container on Jenkins Agent') {
+             
+            steps 
+   {
+                sh "docker run -d -p 7000:5000 shanmukh9/my-demo-app"
+ 
+            }
+        }
 
 	post {
 		always {
