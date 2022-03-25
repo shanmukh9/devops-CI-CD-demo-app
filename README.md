@@ -1,4 +1,4 @@
-# DevOps Bootcamp for Scaler
+# DevOps Bootcamp
 
 This repository contains code that was demoed at the Scaler DevOps bootcamp. Please find the slides [here](https://docs.google.com/presentation/d/1uadhfAhfI_cuWs5DsSrkjdZvqxt1LE1fA8c_uhBTSxI/edit?usp=sharing). I'd recommend going through the slides(also look at the speaker notes!) and as you see a slide that says "Demo", switching to this repository and looking at the files.
 
