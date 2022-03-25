@@ -28,7 +28,7 @@ pipeline{
 				sh 'docker push shanmukh9/my-demo-app:latest'
 			}
 		}
-	}
+	
 	
 	stage('Run Docker container on Jenkins Agent') {
              
@@ -38,6 +38,8 @@ pipeline{
  
             }
         }
+		
+	}
 
 	post {
 		always {
