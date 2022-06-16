@@ -1,5 +1,5 @@
 from app import app
 with app.test_client() as c:
     response = c.get('/')
-    assert response.data == b'Hello Everyone! from DevOps Engineer on Heroku !!!!'
+    assert response.data == b'Hello Everyone! from Hyderabad!!!!'
     assert response.status_code == 200
